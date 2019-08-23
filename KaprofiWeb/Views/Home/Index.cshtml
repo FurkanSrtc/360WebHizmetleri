@@ -1,0 +1,82 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!--==========================
+  Intro Section
+============================a-->
+<section id="intro" class="clearfix">
+    <div class="container">
+
+        <div class="intro-img text-center align-content-center">
+
+            <img src="~/img/360logo.svg" width="312" alt="" class="img-fluid">
+            @*<img src="~/img/intro-img.svg"  alt="" class="img-fluid">*@
+          
+        </div>
+
+        <div class="intro-info">
+            <h2>360 Reklam Hizmetleri</h2>
+            <h4>Sizin için <span>Çözüm</span> üretiyoruz</h4>
+            <div>
+                <a href="#about" class="btn-get-started scrollto">Biz Kimiz ?</a>
+                <a href="#services" class="btn-services scrollto">Hizmetlerimiz</a>
+            </div>
+        </div>
+
+    </div>
+</section><!-- #intro -->
+
+<main id="main">
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    @Html.Partial("Hakkimizda");
+
+    <!-- #about -->
+    <!--==========================
+      Services Section
+    ============================-->
+    @Html.Partial("Hizmetlerimiz");
+
+
+    <!-- #services -->
+    <!--==========================
+      Why Us Section
+    ============================-->
+    @Html.Partial("WhyUs")
+
+    <!--==========================
+      Portfolio Section
+    ============================-->
+    @Html.Partial("Referanslar")
+    <!-- #portfolio -->
+    <!--==========================
+      Clients Section
+    ============================-->
+    @Html.Partial("Team")
+    <!-- #testimonials -->
+    <!--==========================
+      Team Section
+    ============================-->
+    <!-- #team -->
+    <!--==========================
+      Clients Section
+    ============================-->
+    @Html.Partial("Clients");
+
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    @Html.Partial("ContactUs");
+
+    <!-- #contact -->
+
+</main>
+
+
